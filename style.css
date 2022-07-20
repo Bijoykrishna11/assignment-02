@@ -47,7 +47,7 @@ body {
 }
 
 .front-page a {
-    background: #DD0000;
+    background: #9edc77;
     border-radius: 5px;
     padding: 16px 25px;
     text-decoration: none;
@@ -63,6 +63,8 @@ body {
     width: 581px;
     height: 613px;
     padding-right: 89px;
+    cursor: pointer;
+
 }
 
 /* --------------
@@ -81,6 +83,8 @@ body {
     height: 312px;
     border-radius: 10px;
     margin-right: 24px;
+
+
 }
 
 .button-1,
@@ -90,7 +94,9 @@ body {
     border-radius: 10px;
     width: 252px;
     height: 64px;
-    margin: 15px 30px 15px 30px;
+    margin: 15px 25px 10px 25px;
+    font-size: 20px;
+
 
 }
 
@@ -99,7 +105,10 @@ body {
     width: 252px;
     height: 64px;
     margin: 15px 30px 15px 30px;
-    background: #DD0000;
+    background: #925555;
+    color: #FFFFFF;
+    font-size: 20px;
+
 
 }
 
@@ -113,7 +122,7 @@ body {
 
 
 .fb-video {
-    border: 1px solid rgb(239, 203, 137);
+    border: 1px solid rgb(188, 170, 137);
     width: 312px;
     height: 362px;
     border-radius: 10px;
@@ -121,6 +130,7 @@ body {
 
 .videos-text {
     padding: 20px;
+    background-color: rgb(146, 174, 202);
 
 }
 
@@ -131,4 +141,192 @@ body {
 
 .fa-comment-dots {
     margin-left: 40px;
+}
+
+/* -------------------
+    A hiden button
+----------------------- */
+.view {
+
+    visibility: hidden;
+    padding: 20px 40px;
+    background-color: #ff8d8d;
+    margin-top: 50px;
+    border-radius: 5px;
+    border: none;
+
+}
+
+
+/* ----------------------------
+        futter 
+------------------------------- */
+
+.end-websight {
+    width: 1600px;
+    height: 444px;
+    background: #161616;
+
+    border-radius: 10px;
+
+}
+
+.end-websight h2 {
+    color: #f09393;
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    padding-top: 130px;
+
+}
+
+.end-websight hr {
+    width: 1320px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+.author-item {
+
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.author-item a {
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #B9B9B9;
+    padding-bottom: 50px;
+    text-decoration: none;
+
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media .fa-whatsapp-square {
+    padding-right: 30px;
+    color: #68fe5b;
+    font-size: 50px;
+}
+
+.social-media .fa-youtube {
+    padding-right: 30px;
+    color: #f91c1c;
+    font-size: 50px;
+}
+
+.social-media .fa-facebook {
+    padding-right: 30px;
+    color: #35b8ff;
+    font-size: 50px;
+}
+
+
+/*-------------------   
+    tablate view
+    ----------------- */
+
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+
+    .front-page h2 {
+
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .front-page p {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .front-page a {
+
+        font-weight: 400;
+        font-size: 12px;
+
+    }
+
+    .cover-photo {
+        padding-top: 120px;
+    }
+
+    .pic {
+        width: 100%;
+        width: 323px;
+        height: 340px;
+
+    }
+
+    .front-page .cover-page {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        background: #161616;
+        border-radius: 20px;
+        width: 734px;
+        height: 498px;
+
+        margin-top: 50px;
+
+
+    }
+
+    .main-pages {
+        display: grid;
+        grid-template-columns: 1, afr;
+
+
+    }
+
+    .sight-box {
+        background: #ffffff;
+        display: flex;
+        justify-content: center;
+        margin-left: 350px;
+
+    }
+
+    .button-1,
+    .button-2 {
+        background-color: #69c0ef;
+        width: 200px;
+    }
+
+    .button-3 {
+        width: 200px;
+        margin-right: 300px;
+    }
+
+    .facebook-videos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    /*------------------
+ extra hiden button for tab
+----------------- */
+    .view {
+
+        visibility: visible;
+        margin-left: 350px;
+    }
+
+    .end-websight {
+        width: 834px;
+        height: 345px;
+        background: #292424;
+        margin-left: 0px;
+    }
+
+    .end-websight h2 {
+        padding-top: 0px;
+    }
 }
